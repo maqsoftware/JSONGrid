@@ -37,7 +37,6 @@ module powerbi.extensibility.visual {
     export function createColorPalette(colors: IColorInfo[]): IColorPalette {
         if (!colorManager)
             colorManager = new ColorPalette(colors);
-
         return colorManager;
     }
 

@@ -33,7 +33,6 @@ module powerbi.extensibility.visual {
      */
     export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number, objectName: string, propertyName: string, defaultValue: T): T {
         let categoryObjects = category.objects;
-
         if (categoryObjects) {
             let categoryObject: DataViewObject = categoryObjects[index];
             if (categoryObject) {
